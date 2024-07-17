@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		11717B962C46CFA7007E0EAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11717B952C46CFA7007E0EAA /* AppDelegate.swift */; };
-		11717B982C46CFA7007E0EAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11717B972C46CFA7007E0EAA /* SceneDelegate.swift */; };
 		11717B9A2C46CFA7007E0EAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11717B992C46CFA7007E0EAA /* ViewController.swift */; };
 		11717B9D2C46CFA7007E0EAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11717B9B2C46CFA7007E0EAA /* Main.storyboard */; };
 		11717B9F2C46CFA8007E0EAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11717B9E2C46CFA8007E0EAA /* Assets.xcassets */; };
 		11717BA22C46CFA8007E0EAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11717BA02C46CFA8007E0EAA /* LaunchScreen.storyboard */; };
+		11717BAD2C46D135007E0EAA /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11717BAC2C46D135007E0EAA /* PlayingCardView.swift */; };
+		11717BAF2C46D168007E0EAA /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11717BAE2C46D168007E0EAA /* PlayingCard.swift */; };
+		11717BB12C46D1A7007E0EAA /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11717BB02C46D1A7007E0EAA /* PlayingCardDeck.swift */; };
+		11717BB42C46D204007E0EAA /* CMMotionManager+shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11717BB32C46D204007E0EAA /* CMMotionManager+shared.swift */; };
+		11717BB62C46D218007E0EAA /* CardBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11717BB52C46D218007E0EAA /* CardBehavior.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11717B922C46CFA7007E0EAA /* PlayingCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayingCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11717B952C46CFA7007E0EAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11717B972C46CFA7007E0EAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		11717B992C46CFA7007E0EAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		11717B9C2C46CFA7007E0EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11717B9E2C46CFA8007E0EAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11717BA12C46CFA8007E0EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11717BA32C46CFA8007E0EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11717BAC2C46D135007E0EAA /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
+		11717BAE2C46D168007E0EAA /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
+		11717BB02C46D1A7007E0EAA /* PlayingCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
+		11717BB32C46D204007E0EAA /* CMMotionManager+shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMMotionManager+shared.swift"; sourceTree = "<group>"; };
+		11717BB52C46D218007E0EAA /* CardBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBehavior.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +64,33 @@
 		11717B942C46CFA7007E0EAA /* PlayingCard */ = {
 			isa = PBXGroup;
 			children = (
-				11717B952C46CFA7007E0EAA /* AppDelegate.swift */,
-				11717B972C46CFA7007E0EAA /* SceneDelegate.swift */,
+				11717BB52C46D218007E0EAA /* CardBehavior.swift */,
 				11717B992C46CFA7007E0EAA /* ViewController.swift */,
+				11717BB32C46D204007E0EAA /* CMMotionManager+shared.swift */,
+				11717BA92C46D0E3007E0EAA /* Supporting Files */,
+				11717BA32C46CFA8007E0EAA /* Info.plist */,
+			);
+			path = PlayingCard;
+			sourceTree = "<group>";
+		};
+		11717BA92C46D0E3007E0EAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11717BB22C46D1D7007E0EAA /* PlayingCard */,
+				11717B952C46CFA7007E0EAA /* AppDelegate.swift */,
 				11717B9B2C46CFA7007E0EAA /* Main.storyboard */,
 				11717B9E2C46CFA8007E0EAA /* Assets.xcassets */,
 				11717BA02C46CFA8007E0EAA /* LaunchScreen.storyboard */,
-				11717BA32C46CFA8007E0EAA /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11717BB22C46D1D7007E0EAA /* PlayingCard */ = {
+			isa = PBXGroup;
+			children = (
+				11717BAC2C46D135007E0EAA /* PlayingCardView.swift */,
+				11717BAE2C46D168007E0EAA /* PlayingCard.swift */,
+				11717BB02C46D1A7007E0EAA /* PlayingCardDeck.swift */,
 			);
 			path = PlayingCard;
 			sourceTree = "<group>";
@@ -139,8 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				11717B9A2C46CFA7007E0EAA /* ViewController.swift in Sources */,
+				11717BAD2C46D135007E0EAA /* PlayingCardView.swift in Sources */,
+				11717BB12C46D1A7007E0EAA /* PlayingCardDeck.swift in Sources */,
+				11717BAF2C46D168007E0EAA /* PlayingCard.swift in Sources */,
+				11717BB42C46D204007E0EAA /* CMMotionManager+shared.swift in Sources */,
 				11717B962C46CFA7007E0EAA /* AppDelegate.swift in Sources */,
-				11717B982C46CFA7007E0EAA /* SceneDelegate.swift in Sources */,
+				11717BB62C46D218007E0EAA /* CardBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +331,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,6 +359,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
